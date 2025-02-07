@@ -102,7 +102,7 @@ st.markdown("<h1 style='font-size: 30px; text-align: center;'>Champ Randomizer</
 # FILTER SECTION (Side by Side)
 # -------------------------
 # Each filter now has an on_change callback to reset champion data.
-filter_col1, filter_col2, filter_col3 = st.columns(3)
+filter_col1, filter_col2, filter_col3, _ = st.columns([0.2, 0.2, 0.4, 0.2])
 with filter_col1:
     team_size = st.radio(
         "",
@@ -113,7 +113,7 @@ with filter_col1:
     )
 with filter_col2:
     num_champs = st.number_input(
-        "Champs/Summoner:",
+        "Champ/Summoner:",
         min_value=1,
         max_value=10,
         value=3,
