@@ -113,7 +113,7 @@ with filter_col1:
     )
 with filter_col2:
     num_champs = st.number_input(
-        "Champions per summoner:",
+        "Champs/Summoner:",
         min_value=1,
         max_value=10,
         value=3,
